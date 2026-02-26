@@ -1,6 +1,7 @@
 import React from 'react';
+import Login from '../page/auth/Login';
 
-const root = () => {
+const Root = () => {
     return (
         <div>
             <Login></Login>
@@ -8,4 +9,4 @@ const root = () => {
     );
 };
 
-export default root;
+export default Root;
