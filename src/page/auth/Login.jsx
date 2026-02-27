@@ -24,6 +24,7 @@ const Login = () => {
             });
 
             if (response.data.token) {
+                console.log(response)
                 localStorage.setItem('token', response.data.token);
                 localStorage.setItem('user', JSON.stringify(response.data));
                 navigate('/dashboard');
@@ -36,11 +37,7 @@ const Login = () => {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-[#fcfcfd] relative overflow-hidden font-sans selection:bg-emerald-100">
-            
-            {/* --- Animated Background Elements --- */}
-            <div className="absolute top-[-20%] left-[-10%] w-[700px] h-[700px] bg-emerald-100/40 rounded-full blur-[120px] animate-pulse"></div>
-            <div className="absolute bottom-[-10%] right-[-5%] w-[500px] h-[500px] bg-blue-100/50 rounded-full blur-[100px]"></div>
+        <div className="min-h-screen flex items-center justify-center relative overflow-hidden font-sans selection:bg-emerald-100">
 
             {/* --- Main Login Card --- */}
             <div className="w-full max-w-[460px] mx-4 bg-white/90 backdrop-blur-2xl rounded-[40px] shadow-[0_32px_64px_-16px_rgba(0,0,0,0.08)] p-8 md:p-12 border border-white relative z-10 transition-all duration-500">
