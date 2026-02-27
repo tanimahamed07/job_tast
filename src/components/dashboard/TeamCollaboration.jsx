@@ -42,8 +42,8 @@ const TeamCollaboration = () => {
                         </div>
                         <span
                             className={`text-[10px] font-black px-3 py-1.5 rounded-lg uppercase ${member.status === "active"
-                                    ? "bg-emerald-50 text-emerald-600 border border-emerald-100"
-                                    : "bg-gray-100 text-gray-500 border border-gray-200"
+                                ? "bg-emerald-50 text-emerald-600 border border-emerald-100"
+                                : "bg-gray-100 text-gray-500 border border-gray-200"
                                 }`}
                         >
                             {member.status}

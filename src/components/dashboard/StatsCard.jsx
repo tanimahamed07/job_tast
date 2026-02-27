@@ -48,16 +48,16 @@ const StatsCard = () => {
         <div
           key={i}
           className={`p-6 rounded-2xl border ${stat.active
-              ? "bg-[#165D41] text-white shadow-lg border-[#165D41]"
-              : "bg-white border-gray-100"
+            ? "bg-[#165D41] text-white shadow-lg border-[#165D41]"
+            : "bg-white border-gray-100"
             } cursor-default`}
         >
           <div className="flex justify-between items-center mb-6">
             <span className="text-[20px] font-semibold">{stat.title}</span>
             <div
               className={`p-2 rounded-full border ${stat.active
-                  ? "border-white/20 bg-white/10"
-                  : "border-black bg-gray-50"
+                ? "border-white/20 bg-white/10"
+                : "border-black bg-gray-50"
                 }`}
             >
               <ArrowUpRight size={18} />
@@ -69,8 +69,8 @@ const StatsCard = () => {
           <div className="flex items-center gap-2">
             <span
               className={`px-2 py-0.5 rounded text-[10px] font-bold ${stat.active
-                  ? "bg-white/10"
-                  : "bg-[#F4FBF7] text-[#00AC4F]"
+                ? "bg-white/10"
+                : "bg-[#F4FBF7] text-[#00AC4F]"
                 }`}
             >
               ▲ {stat.change}%

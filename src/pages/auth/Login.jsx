@@ -9,7 +9,7 @@ const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
-    
+
     const navigate = useNavigate();
 
     const handleLogin = async (e) => {
@@ -41,7 +41,7 @@ const Login = () => {
 
             {/* --- Main Login Card --- */}
             <div className="w-full max-w-[460px] mx-4 bg-white/90 backdrop-blur-2xl rounded-[40px] shadow-[0_32px_64px_-16px_rgba(0,0,0,0.08)] p-8 md:p-12 border border-white relative z-10 transition-all duration-500">
-                
+
                 {/* Header Section */}
                 <div className="flex flex-col items-center mb-10">
                     <div className="w-16 h-16 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-[22px] flex items-center justify-center shadow-2xl shadow-emerald-200/50 mb-6 transform hover:rotate-6 transition-transform cursor-pointer">
@@ -61,8 +61,8 @@ const Login = () => {
                             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400 group-focus-within:text-emerald-500 transition-colors">
                                 <HiOutlineMail size={22} />
                             </div>
-                            <input 
-                                type="email" 
+                            <input
+                                type="email"
                                 className="w-full pl-12 pr-4 py-4 bg-slate-50/50 border border-slate-100 rounded-2xl focus:ring-4 focus:ring-emerald-500/10 focus:border-emerald-500 focus:bg-white outline-none transition-all duration-300 text-slate-800 font-medium placeholder:text-slate-300 shadow-sm"
                                 placeholder="name@company.com"
                                 value={email}
@@ -81,15 +81,15 @@ const Login = () => {
                             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400 group-focus-within:text-emerald-500 transition-colors">
                                 <HiOutlineLockClosed size={22} />
                             </div>
-                            <input 
-                                type={showPassword ? "text" : "password"} 
+                            <input
+                                type={showPassword ? "text" : "password"}
                                 className="w-full pl-12 pr-12 py-4 bg-slate-50/50 border border-slate-100 rounded-2xl focus:ring-4 focus:ring-emerald-500/10 focus:border-emerald-500 focus:bg-white outline-none transition-all duration-300 text-slate-800 font-medium placeholder:text-slate-300 shadow-sm"
                                 placeholder="••••••••"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                                 required
                             />
-                            <button 
+                            <button
                                 type="button"
                                 onClick={() => setShowPassword(!showPassword)}
                                 className="absolute inset-y-0 right-0 pr-4 flex items-center text-slate-300 hover:text-emerald-500 transition-colors"
@@ -111,8 +111,8 @@ const Login = () => {
                     )}
 
                     {/* Submit Button */}
-                    <button 
-                        type="submit" 
+                    <button
+                        type="submit"
                         disabled={loading}
                         className="w-full bg-slate-900 hover:bg-black text-white font-bold py-4.5 rounded-2xl transition-all duration-300 shadow-xl shadow-slate-200 active:scale-[0.97] disabled:opacity-70 flex items-center justify-center group h-[60px]"
                     >
@@ -133,7 +133,7 @@ const Login = () => {
                 {/* Footer Section */}
                 <div className="mt-10 text-center">
                     <p className="text-slate-400 text-sm font-semibold">
-                        Don't have an account? 
+                        Don't have an account?
                         <button className="text-emerald-600 font-bold ml-1.5 hover:text-emerald-700 transition-all border-b-2 border-transparent hover:border-emerald-600 pb-0.5">
                             Create Free Account
                         </button>

@@ -50,8 +50,8 @@ const Sidebar = ({ isSidebarOpen, onClose, onLogout }) => {
                         <button
                             key={item.name}
                             className={`w-full flex items-center justify-between p-3 rounded-xl transition-all cursor-pointer ${item.active
-                                    ? "bg-emerald-50 text-[#1A1D1F] border-l-8 border-emerald-800 rounded-l-lg"
-                                    : "text-gray-500 hover:bg-gray-50"
+                                ? "bg-emerald-50 text-[#1A1D1F] border-l-8 border-emerald-800 rounded-l-lg"
+                                : "text-gray-500 hover:bg-gray-50"
                                 }`}
                         >
                             <div className="flex items-center gap-3">
