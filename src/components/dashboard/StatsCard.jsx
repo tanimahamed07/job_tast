@@ -35,7 +35,7 @@ const StatsCard = () => {
       label: "Monthly Growth",
     },
     {
-      title: "Pending Project",
+      title: "Pending ProjectT",
       value: "2",
       change: "0",
       label: "On Discuss",
