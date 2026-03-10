@@ -36,7 +36,7 @@ const StatsCard = () => {
     },
     {
       title: "Pending ProjectT",
-      value: "2",
+      value: "3",
       change: "0",
       label: "On Discuss",
     },
